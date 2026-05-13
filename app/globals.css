@@ -1,0 +1,99 @@
+@import "tailwindcss";
+
+@theme inline {
+  /* Цвета бренда — #104992 из логотипа Nazranka */
+  --color-brand-50: #e8f0fa;
+  --color-brand-100: #c5d9f2;
+  --color-brand-200: #9ebfe8;
+  --color-brand-300: #6fa0db;
+  --color-brand-400: #4a87d1;
+  --color-brand-500: #2570c4;
+  --color-brand-600: #104992;
+  --color-brand-700: #0d3d7a;
+  --color-brand-800: #0a3163;
+  --color-brand-900: #07254c;
+
+  /* Акцентный красный (10% — срочные новости) */
+  --color-accent-500: #ef4444;
+  --color-accent-600: #dc2626;
+  --color-accent-700: #b91c1c;
+
+  --font-sans: var(--font-inter);
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background: #ffffff;
+  color: #171717;
+  font-family: var(--font-sans), system-ui, -apple-system, sans-serif;
+  overflow-anchor: none;
+  /* Убираем любые отступы в in-app браузерах */
+  -webkit-overflow-scrolling: touch;
+}
+
+/* === Типографика статей === */
+
+.article-body p {
+  margin-bottom: 1rem;
+  line-height: 1.75;
+}
+
+.article-body h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.article-body h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.article-body blockquote {
+  border-left: 4px solid #104992;
+  padding-left: 1rem;
+  font-style: italic;
+  margin: 1rem 0;
+  color: #4b5563;
+}
+
+.article-body ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.article-body ol {
+  list-style: decimal;
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.article-body li {
+  margin-bottom: 0.25rem;
+  line-height: 1.75;
+}
+
+.article-body a {
+  color: var(--color-brand-600);
+  text-decoration: underline;
+}
+
+.article-body a:hover {
+  color: var(--color-brand-700);
+}
+
+.article-body img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  margin: 1rem 0;
+}
